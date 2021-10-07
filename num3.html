@@ -1,0 +1,202 @@
+<htnl lang ="ru">
+ <head>
+     <meta charset="UTF-8">
+     <title>Задaние 3</title>
+     <link rel="stylesheet" href="style.css">
+     
+ </head>
+ <body>
+    
+    <div class="header">
+        <div class="logo"> 
+            <a href = "index1.html">
+                <span class = "rim">RICK and Morty</span>
+            </a>
+        </div>
+        <img src="http://rik-i-morti.ru/uploads/posts/2019-11/1574154814_1.jpg">
+     </div>
+     <div id="n1">
+     <nav>
+         <ul>
+             <li><a href="#t1">Таблица 1</a></li>
+             <li><a href="#t2">Таблица 2</a></li>
+             <li><a href="#f1">Форма </a></li>
+             <li><a href="#">ничего</a></li>
+         </ul>
+        </nav>
+     </div> 
+    <div id="content">
+     <section id="t1">
+         <table>
+        <tr>
+            <th>Сезон</th>
+            <th>Оценки критиков</th>
+            <th>Оценки зрителей</th>
+            <th>Шутки Рика</th>
+            <th>Кол-во приключений</th>
+        </tr>
+        <tr>
+            <td>1 сезон</td>
+            <td>8,5/10</td>
+            <td>9,8/10</td>
+            <td>10/10</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>2 сезон</td>
+            <td>8,0/10</td>
+            <td>9,2/10</td>
+            <td>10/10</td>
+            <td>17</td>
+        </tr>
+        <tr>
+            <td>3 сезон</td>
+            <td>8,7/10</td>
+            <td>9,4/10</td>
+            <td>10/10</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>4 сезон</td>
+            <td>9,0/10</td>
+            <td>9,6/10</td>
+            <td>11/10</td>
+            <td>14</td>
+        </tr>
+    </table>
+</div>
+</section>
+<section id="t2">
+<div>
+    <p>Выше находится красивая таблица, ниже пойдет не очень</p>
+</div>
+
+
+<div>
+    <table>
+        <tr>
+            <th>Сезон</th>
+            <th>Оценки критиков</th>
+            <th>Оценки зрителей</th>
+            <th>Шутки Рика</th>
+            <th>Кол-во приключений</th>
+        </tr>
+        <tr>
+            <td>1 сезон</td>
+            <td>8,5/10</td>
+            <td>9,8/10</td>
+            <td>10/10</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>2 сезон</td>
+            <td>8,7/10</td>
+            <td colspan="2">8,0/10</td>
+
+            <td>17</td>
+        </tr>
+        <tr>
+            <td>3 сезон</td>
+            <td colspan="3">10/10</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>4 сезон</td>
+            <td>9,6</td>
+            <td colspan="3">9,6/10</td>
+
+
+        </tr>
+
+    </table>
+</div>
+</section>
+<section id="f1">
+<div>
+    <h1>Форма</h1>
+    
+    <form action="/"
+    method="POST">
+    
+    <label>
+    Имя:<br />
+    <input name="field-name"
+    value="Петр" />
+    </label><br />
+    
+    <label>
+    Еmail:<br />
+    <input name="field-email"
+    value="test@example.com"
+    type="email" />
+    </label><br />
+    
+    <label>
+    Дата рождения:<br />
+    <input name="field-birth"
+    value="2000-01-01"
+    type="date" />
+    </label><br />
+    
+    Пол:<br />
+    <label><input type="radio" checked="checked"
+    name="radio-group-1" value="Мужской" />
+    Мужской</label>
+    <label><input type="radio"
+    name="radio-group-1" value="Женский" />
+    Женский</label>
+    <label><input type="radio"
+    name="radio-group-1" value="Отсутствует" />
+    Отсутствует</label><br />
+    
+    Количество конечностей:<br />
+    <label><input type="radio"
+    name="radio-group-2" value="1" />
+    1</label>
+    <label><input type="radio"
+    name="radio-group-2" value="2" />
+    2</label>
+    <label><input type="radio"
+    name="radio-group-2" value="3" />
+    3</label>
+    <label><input type="radio" checked="checked"
+    name="radio-group-2" value="4" />
+    4</label><br />
+    
+    <label>
+    Сверхспособности:
+    <br />
+    <select name="field-listbox"
+    multiple="multiple">
+    <option value="Бессмертие">Бессмертие</option>
+    <option value="Невидимость">Невидимость</option>
+    <option value="Суперскорость" selected="selected">Суперскорость</option>
+    <option value="Телепатия">Телепатия</option>
+    </select>
+    </label><br />
+    
+    <label>
+    Биография:<br />
+    <textarea name="field-bio">Напишите о себе</textarea>
+    </label><br />
+    
+    Чекбокс:<br />
+    <label><input type="checkbox" checked="checked"
+    name="check-1" />
+    Я болею за Рика</label><br />
+    <br />
+    <label><input type="checkbox" checked="checked"
+    name="check-1" />
+    Нет, Морти круче</label><br />
+    Если уверенны в своем ответе нажимайте:
+    <input type="submit" value="Отправить" />
+    </form>
+    </div>
+</section>
+</div>
+<div>
+    <footer class="footer"></footer>
+</div>
+     
+ </body>
+</htnl>
