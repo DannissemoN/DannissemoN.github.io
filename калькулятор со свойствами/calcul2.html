@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="ru"></html>
+
+<head>
+    <script src="javacal.js" defer></script>
+
+    <style>
+        body {
+            background-color: rgb(252, 133, 226);
+        }
+        form{
+            background-color: rgb(228, 87, 228);
+            width: 250px;
+            height: 150px;
+            padding: 20px;
+ 
+            margin: auto;
+        }
+        button{
+            margin-top: 7px;
+        }
+        h1, h3{
+            text-align:center;
+        }
+        .myradios, .mycheckbox{
+            display: none;
+        }
+    </style>
+</head>
+
+<header>
+    <div>
+        <h1 class="font-weight-bold">Рассчитайте стоимость</h1>
+    </div>
+</header>
+</body>
+    
+    <div>
+        <div id ="content">
+        <form>
+            <label>
+                Количество дней:<br />
+                <input class="myfield1" name="field1" type="text" />
+            </label><br /><label></label><br/>
+                Выберете тип
+                <br />
+                <select name="myselect">
+                    <option value="1">Эконом</option>
+                    <option value="2">Стандарт</option>
+                    <option value="3">Премиум</option>
+                </select>
+            </label><br />
+            <div class="myradios" id="myradios">
+                <br/>Безлемит на:<br/>
+                <label><input type="radio" name="myradio" id ="r1" value="r1">телеграм</label>
+                <label><input type="radio" name="myradio" id ="r2" value="r2">вконтакте</label>
+                <label><input type="radio" name="myradio" id ="r3" value="r3">вацап</label>
+              </div>  
+              <div class="mycheckbox" id="mycheckbox">
+                <br/>Дополнительные услуги(подписки):<br/>
+            <label>
+                <input type="checkbox" 
+                        name="check-1" id="c1" />
+                вк.музыка
+            </label>
+            <label>
+                <input type="checkbox" 
+                        name="check-2" id="c2"/>
+                1 месяц в Кинопоиск
+            </label>
+            <label>
+                <input type="checkbox" 
+                        name="check-3" id="c3"/>
+                        ютуб премиум
+            </label><br />
+              </div>
+        </form>
+    </div>
+    <h3 class="font-weight-bold">Результат</h3>
+        <h3 id="result"></h3>
+    </div>
+</body>
+
+</html>
